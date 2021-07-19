@@ -1,0 +1,191 @@
+/* chargement des polices de caracteres */
+@font-face{
+    font-family: "PlayfairDisplay";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Buntutu";
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+/* CSS global */
+*{
+    font-size: 14px;
+    color: #626262;
+    box-sizing: border-box;
+    font-family: "PlayfairDisplay";
+}
+
+p{
+    line-height: 26px;
+}
+
+
+img{
+    max-width: 100%;
+}/* rendre l'image responsive*/
+a, a:visited{
+    text-decoration: none; /* enleve le trait en dessous*/
+    color: black;
+    transition: all 0.5s;
+}
+a:hover{
+    color: rgba(255,5,5,0.75);
+}
+
+
+/*Classe utilitaire*/
+/* bloquer le contenue a 1060px*/
+.container{ 
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;/*le conteneur ne prendra jamais plus de 100% de la largeur dispo*/
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.inline{
+    float: inline-start;
+}
+
+/* Header */ 
+header{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+header img{
+    margin-top: 30px;
+}
+.marginright{
+    margin-right: 50px;
+}
+#logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header li+li{
+    margin-left: 115px;
+}
+
+
+/* contenue */
+main{
+    width: 66%;
+    padding-left: 80px;
+}
+#sidebar{
+    width: 30%;
+}
+
+main, #sidebar{
+    margin-bottom: 115px;
+}
+
+
+main header{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+article .categorie{
+    font-family: "Buntutu";
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+article h1{
+    font-size: 30px;
+}
+article p, article img {
+    margin-bottom: 20px;
+}
+article footer{
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 115px;
+    font-family: "Buntutu";
+}
+article footer nav{
+    margin-left: 15px;
+}
+
+
+/* Articles similaires*/
+section#similaire{
+    background-color:#f0f0f0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+section#similaire div#similaire, section#similaire div.container{
+    padding-left: 80px;
+
+}
+section .categorie{
+    font-family: "Buntutu";
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+section div#similaire p{
+    font-family: "PlayfairDisplay";
+    font-size: 22px;
+    
+}
+section#similaire img{
+    margin-top: 40px;
+}
+section#similaire div#similaire div+div{
+    margin-left: 40px;
+}
+
+
+
+
+/* comments */
+div#comments{
+    padding-left: 80px;
+}
+div#comments div p{
+    font-family: "Buntutu";
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+
+
+
+/*footer*/
+footer{
+    background-color:#f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 45;
+}
+footer li+li, footer p + nav{
+    margin-left: 15px;
+}
+
+footer .container > nav {
+    margin-left: 75px;
+}
+footer{
+    color: #000000;
+}
